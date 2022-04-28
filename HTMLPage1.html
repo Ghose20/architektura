@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Projekt</title>
+
+    <link rel="stylesheet" href="StyleSheet1.css">
+</head>
+
+<body>
+
+    <div id="box">
+
+        <div id="mov">
+            <div id="tytul">
+                MOV
+            </div>
+            <div id="podtytul">
+                Tylko wartości hexadecymalne!!!
+            </div>
+            <script>
+                function onSubmitClick() {
+                    var box2 = document.getElementById('box1');
+                    var box1 = document.getElementById('box2');
+                    box2.value = box1.value;
+                }
+
+                function onSubmitClick2() {
+
+                    var box4 = document.getElementById('box3');
+                    var box3 = document.getElementById('box4');
+                    box4.value = box3.value;
+                }
+                function onSubmitClick3() {
+
+                    var box6 = document.getElementById('box5');
+                    var box5 = document.getElementById('box6');
+                    box6.value = box5.value;
+                }
+                function onSubmitClick4() {
+
+                    var box8 = document.getElementById('box7');
+                    var box7 = document.getElementById('box8');
+                    box8.value = box7.value;
+
+                }
+            </script>
+
+
+
+            <button onclick='onSubmitClick()'>MOV</button>
+            AH
+            <input id='box1' value="" tabindex="9" maxlength="2" />
+            AL
+            <input id='box2' value="" tabindex="9" maxlength="2" />
+
+
+
+            <button onclick='onSubmitClick2()'>MOV</button>
+            BH
+            <input id='box3' value="" tabindex="9" maxlength="2" />
+            BL
+            <input id='box4' value="" tabindex="9" maxlength="2" />
+
+
+            <button onclick='onSubmitClick3()'>MOV</button>
+            CH
+            <input id='box5' tabindex="9" maxlength="2" />
+            CL
+            <input id='box6' tabindex="9" maxlength="2" />
+
+
+
+            <button onclick='onSubmitClick4()'>MOV</button>
+            DH
+            <input id='box7' tabindex="9" maxlength="2" />
+            DL
+            <input id='box8' tabindex="9" maxlength="2" />
+
+
+        </div>
+
+        <div id="xchg">
+            <div id="tytul">
+                XCHG
+            </div>
+            <div id="podtytul">
+                Tylko wartosci hexadecymalne
+            </div>
+
+            <button id="swap">XCHG</button>
+            AH
+            <input id="one" value="" tabindex="9" maxlength="2" />
+            AL
+            <input id="two" value="" tabindex="9" maxlength="2" />
+
+
+
+            <button id="swap2">XCHG</button>
+            BH
+            <input id="three" value="" tabindex="9" maxlength="2" />
+            BL
+            <input id="four" value="" tabindex="9" maxlength="2" />
+
+
+            <button id="swap3">XCHG</button>
+            CH
+            <input id="five" value="" tabindex="9" maxlength="2" />
+            CL
+            <input id="six" value="" tabindex="9" maxlength="2" />
+
+
+
+            <button id="swap4">XCHG</button>
+            DH
+            <input id="seven" value="" tabindex="9" maxlength="2" />
+            DL
+            <input id="eight" value="" tabindex="9" maxlength="2" />
+
+
+
+
+
+            <script>
+                var btn = document.getElementById("swap");
+                btn.addEventListener("click", function (e) {
+                    var from = document.getElementById("one"),
+                        to = document.getElementById("two");
+                    if (!!from && !!to) {
+                        var _ = from.value;
+                        from.value = to.value;
+                        to.value = _;
+                    } else {
+                        console.log("some input elements could not be found");
+                    }
+                });
+
+
+                var btn = document.getElementById("swap2");
+                btn.addEventListener("click", function (e) {
+                    var from = document.getElementById("three"),
+                        to = document.getElementById("four");
+                    if (!!from && !!to) {
+                        var _ = from.value;
+                        from.value = to.value;
+                        to.value = _;
+                    } else {
+                        console.log("some input elements could not be found");
+                    }
+                });
+
+                var btn = document.getElementById("swap3");
+                btn.addEventListener("click", function (e) {
+                    var from = document.getElementById("five"),
+                        to = document.getElementById("six");
+                    if (!!from && !!to) {
+                        var _ = from.value;
+                        from.value = to.value;
+                        to.value = _;
+                    } else {
+                        console.log("some input elements could not be found");
+                    }
+                });
+
+                var btn = document.getElementById("swap4");
+                btn.addEventListener("click", function (e) {
+                    var from = document.getElementById("seven"),
+                        to = document.getElementById("eight");
+                    if (!!from && !!to) {
+                        var _ = from.value;
+                        from.value = to.value;
+                        to.value = _;
+                    } else {
+                        console.log("some input elements could not be found");
+                    }
+                });
+            </script>
+        </div>
+        <div id="stopka">
+            Maciej Firek
+        </div>
+    </div>
+
+</body>
+</html>
